@@ -7,6 +7,9 @@ smart-doc是一款根据接口的泛型定义来在编译器期加载分析项�
 ```java
 public class CommonResult<T> implements Serializable {
 
+    /**
+         * 是否成功
+         */
     private boolean success = false;
     private String message;
     private T data;
@@ -40,3 +43,43 @@ public CommonResult<Page<User>> addUser(@RequestBody UserQuery query){
     return CommonResult.ok().setResult(user);
 }
 ```
+
+### 错误示例
+#### 1. 接口中使用`Map`
+因为无法分析代码中Map的key值，所以smart-doc无法生成好的文档。
+
+```java
+@GetMapping(value = "/object")
+public Map<String, User> testMapUser() {
+    return null;
+}
+```
+
+#### 2. 返回`JSONObject`
+
+```java
+/**
+     * 返回用户信息
+     * @return
+     */
+@GetMapping(value = "/user")
+public JSONObject object() {
+    return null;
+}
+```
+团队中有这样定义返回数据一定要批评，鬼知道返回的是啥。程序员都看不懂，更别说`smart-doc`了。
+
+#### 3. 返回`ModelMap`
+ 
+```java
+/**
+     * 返回用户信息
+     * @return
+     */
+@GetMapping(value = "/user")
+public ModelMap object() {
+    return null;
+}
+
+```
+这个和`Map`是一个道理，并且`smart-doc`直接天生屏蔽`ModelMap`。

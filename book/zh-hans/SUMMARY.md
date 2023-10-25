@@ -5,6 +5,7 @@
 * [快速开始](quickStart.md)
 * [使用指南](guide.md)
 * [最佳实践](bestPractice.md)
+* [示例](example.md)
 
 
 ### 高级

@@ -52,7 +52,7 @@
 > `includes`中需要调整为项目模块所依赖的包配置`artifactId:groupId`, 支持正则`artifactId:*`
 
 
-如果项目依赖其他内部公共模块和二方包, 则其他包需要配置源码打包.
+如果项目依赖其他内部公共模块和二方包, 则依赖包需要配置源码打包.
 ```xml
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
@@ -70,9 +70,9 @@
 ```
 
 #### 如何使用
-在`IDEA`中直接使用`Maven`插件目录下的`smart-doc`模块
+1. 在`IDEA`中直接使用`Maven`插件目录下的`smart-doc`模块
 
-在命令行中执行
+2. 在命令行中执行
 ```shell
 mvn -Dfile.encoding=UTF-8 smart-doc:html
 mvn -Dfile.encoding=UTF-8 smart-doc:markdown
