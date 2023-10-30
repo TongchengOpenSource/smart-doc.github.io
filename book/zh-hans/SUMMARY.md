@@ -4,8 +4,12 @@
 * [简介](README.md)
 * [快速开始](quickStart.md)
 * [使用指南](guide.md)
+    * [javadoc](guide.md#javadoc)
+    * [smart-doc](guide.md#smart-doc)
 * [最佳实践](bestPractice.md)
 * [示例](example.md)
+    * [单模块](example.md#单模块)
+    * [多模块](example.md#多模块)
 
 
 ### 高级

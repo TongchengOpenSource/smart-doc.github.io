@@ -14,9 +14,12 @@
     {
         "search-pro": {
             "cutWordLib": "nodejieba"
+        },
+        "theme-default": {
+            "showLevel": true
         }
     },
-    "theme-default": {
-        "showLevel": true
-    }
+    "styles": {
+		"website": "./styles/website.css"
+	}
 }
