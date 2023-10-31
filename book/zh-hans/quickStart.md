@@ -2,11 +2,11 @@
 
 > smart-doc官方目前已经开发完成Maven插件和Gradle插件，本章以Maven插件举例.
 
-> Gradle插件配置请跳转.
+> Gradle插件配置请[跳转](./plugins/gradle.md).
 
 
 ## 最小化配置
-**请保证你的代码格式符合最佳实践中的格式规范**
+**请保证你的代码格式符合[最佳实践](./bestPractice.md)中的格式规范**
 
 在项目启动类所在模块的`resources`目录下创建`smart-doc.json`文件.
 ```json
