@@ -53,10 +53,10 @@
         * [多模块](faq/question.md#多模块)
         * [插件](faq/question.md#插件)
         * [其他](faq/question.md#其他)
-        * [理念](faq/question.md#理念)
 
 
 ### 社区
+* [理念](community/idea.md)
 * [开发者](community/developer.md)
 * [如何共建](community/contributing.md)
 
