@@ -38,7 +38,7 @@
 ### 插件
 * [maven](plugins/maven.md)
     * [如何使用](plugins/maven.md#maven)
-    * [调试](plugins/maven.md#调试插件)
+    * [调试](plugins/maven.md#插件调试)
 * [gradle](plugins/gradle.md)
     * [如何使用](plugins/gradle.md#gradle)
     * [调试](plugins/gradle.md#插件调试)
