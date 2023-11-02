@@ -15,6 +15,8 @@ target
 .mtj.tmp/
 
 node_modules/
+_book/
+_book/**
 package-lock.json
 
 # Package Files #
