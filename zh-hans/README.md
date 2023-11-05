@@ -36,10 +36,10 @@
 - `debug`接口调试`html5`页面完全支持文件上传，下载(`@download tag`标记下载方法)测试。
 
 
-## 最佳实践
+## 最佳实践png
 
 smart-doc + [Torna](http://torna.cn/) 组成行业领先的文档生成和管理解决方案，使用`smart-doc`无侵入完成`JAVA`源代码分析和提取注释生成`API`文档，自动将文档推送到`Torna`企业级接口文档管理平台。
-![smart-doc + Torna](../_images/smart-to-torna.png)
+![smart-doc + Torna](https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/smart-to-torna.png)
 
 [smart-doc+Torna文档自动化](zh-cn/diy/integrated.md)
 
@@ -51,8 +51,8 @@ smart-doc + [Torna](http://torna.cn/) 组成行业领先的文档生成和管理
 
 愿意参与构建`smart-doc`或者是需要交流问题可以加入qq群，[常见问题答疑](https://smart-doc-group.github.io/#/zh-cn/faq)
 
-<img src="../_images/smart-doc-qq.jpg" title="qq群" width="200px" height="210px"/>
-<img src="../_images/smart-doc-qq2.jpeg" title="qq群2" width="200px" height="210px"/>
+<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/smart-doc-qq.jpg" title="qq群" width="200px" height="210px"/>
+<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/smart-doc-qq2.jpeg" title="qq群2" width="200px" height="210px"/>
 
 > 1群已满，有问题请加2群。
 
@@ -61,16 +61,16 @@ smart-doc + [Torna](http://torna.cn/) 组成行业领先的文档生成和管理
 
 > 排名不分先后，更多接入公司，欢迎在[此处](https://github.com/smart-doc-group/smart-doc/issues/12)登记（仅供开源用户参考）
 
-<img src="../_images/known-users/iflytek.png">
-&nbsp;&nbsp;<img src="../_images/known-users/oneplus.png" title="一加" width="83px" height="83px"/>
-&nbsp;&nbsp;<img src="../_images/known-users/xiaomi.png" title="小米" width="170px" height="83px"/>
-&nbsp;&nbsp;<img src="../_images/known-users/neusoft.png" title="东软集团" width="180px" height="83px"/>
-&nbsp;&nbsp;<img src="../_images/known-users/zhongkezhilian.png" title="中科智链" width="272px" height="83px"/>
+<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/known-users/iflytek.png">
+&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/known-users/oneplus.png" title="一加" width="83px" height="83px"/>
+&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/known-users/xiaomi.png" title="小米" width="170px" height="83px"/>
+&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/known-users/neusoft.png" title="东软集团" width="180px" height="83px"/>
+&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/known-users/zhongkezhilian.png" title="中科智链" width="272px" height="83px"/>
 &nbsp;&nbsp;<img src="https://www.hand-china.com/static/img/hand-logo.svg" title="上海汉得信息技术股份有限公司" width="260px" height="83px"/>
-&nbsp;&nbsp;<img src="../_images/known-users/shunfeng.png" title="顺丰" width="83px" height="83px"/>
-&nbsp;&nbsp;<img src="../_images/known-users/yuanmengjiankang.png" title="远盟健康" width="260px" height="83px"/>
-&nbsp;&nbsp;<img src="../_images/known-users/ly.jpeg" title="同程旅行" width="200px" height="100px"/>
-&nbsp;&nbsp;<img src="../_images/known-users/tcsklogo.jpeg" title="同程数科" width="200px" height="83px"/>
+&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/known-users/shunfeng.png" title="顺丰" width="83px" height="83px"/>
+&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/known-users/yuanmengjiankang.png" title="远盟健康" width="260px" height="83px"/>
+&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/known-users/ly.jpeg" title="同程旅行" width="200px" height="100px"/>
+&nbsp;&nbsp;<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/known-users/tcsklogo.jpeg" title="同程数科" width="200px" height="83px"/>
 
 ## 获奖情况
 
@@ -79,7 +79,7 @@ smart-doc + [Torna](http://torna.cn/) 组成行业领先的文档生成和管理
 
 ## 致谢
 感谢[JetBrains SoftWare](https://www.jetbrains.com) 为本开源项目提供的免费Open Source license。<br/>
-<img src="../_images/jetbrains-variant-3.png" width="260px" height="220px"/>
+<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/jetbrains-variant-3.png" width="260px" height="220px"/>
 
 ## License
 
