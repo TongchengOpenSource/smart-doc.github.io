@@ -59,4 +59,5 @@
 * [理念](community/idea.md)
 * [开发者](community/developer.md)
 * [如何共建](community/contributing.md)
+* [贡献流程](community/pull-request-process.md)
 
