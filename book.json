@@ -1,0 +1,25 @@
+{ 
+    "plugins" : 
+    [
+        "page-footer-ex",
+        "livereload",
+        "advanced-emoji",
+        "code",
+        "popup",
+        "back-to-top-button",
+        "chapter-fold",
+        "search-pro"
+    ],
+    "pluginsConfig": 
+    {
+        "search-pro": {
+            "cutWordLib": "nodejieba"
+        },
+        "theme-default": {
+            "showLevel": true
+        }
+    },
+    "styles": {
+		"website": "./styles/website.css"
+	}
+}
