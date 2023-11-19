@@ -337,3 +337,84 @@ public CommonResult<String> create() {
 }
 ```
 
+
+
+## jsr
+
+| 功能       | 注解        |
+| ---------- | ----------- |
+| `字段必填` | `@NotNull`  |
+|            | `@NotEmpty` |
+|            | `@NotBlank` |
+| `字段为空` | `@Null`     |
+| `长度限制` | `@Min`      |
+|            | `@Max`      |
+|            | `@Length`   |
+|            | `@Size`     |
+
+
+
+### 分组校验
+
+例如: 同一个实体类, 新增接口不需要传`id`, 而修改接口需要传`id`
+
+```java
+@Data
+@EqualsAndHashCode
+public class User {
+
+    /**
+         * id
+         */
+    @Null(groups = Save.class)
+    @NotNull(groups = Update.class)
+    private Long id;
+
+    /**
+         * 名称
+         */
+    @Min(value = 4)
+    @NotEmpty(message = "名称不能为空")
+    private String name;
+
+    /**
+         * 邮件
+         */
+    @Length(max = 32)
+    private String email;
+
+    public interface Save extends Default {
+
+    }
+
+    public interface Update extends Default {
+
+    }
+}
+
+@RestController
+@RequestMapping("validator")
+public class ValidatorTestController {
+
+	/**
+         * 分组验证1
+         * @param collect
+         * @return
+         */
+    @PostMapping("/save")
+    public CommonResult<Void> save(@Validated({User.Save.class}) @RequestBody User user){
+        return CommonResult.ok();
+    }
+
+    /**
+         * 分组验证2
+         * @param collect
+         * @return
+         */
+    @PostMapping("/update")
+    public CommonResult<Void> update(@Validated({User.Update.class}) @RequestBody User user){
+        return CommonResult.ok();
+    }
+}
+```
+
