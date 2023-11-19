@@ -6,6 +6,7 @@
 * [使用指南](guide.md)
     * [javadoc](guide.md#javadoc)
     * [smart-doc](guide.md#smart-doc)
+    * [jsr](guide.md#jsr)
 * [最佳实践](bestPractice.md)
 * [示例](example.md)
     * [单模块](example.md#单模块)
