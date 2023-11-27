@@ -1,0 +1,1179 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>gradle · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="gradle.html" />
+    
+    
+    <link rel="prev" href="maven.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">基础</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../quickStart.html">
+            
+                <a href="../quickStart.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../guide.html">
+            
+                <a href="../guide.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    使用指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../guide.html">
+            
+                <a href="../guide.html#javadoc">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    javadoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../guide.html">
+            
+                <a href="../guide.html#smart-doc">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    smart-doc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../guide.html">
+            
+                <a href="../guide.html#jsr">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    jsr
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../bestPractice.html">
+            
+                <a href="../bestPractice.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../example.html">
+            
+                <a href="../example.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    示例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../example.html">
+            
+                <a href="../example.html#单模块">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    单模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../example.html">
+            
+                <a href="../example.html#多模块">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    多模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">高级</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../advanced/config.html">
+            
+                <a href="../advanced/config.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../advanced/advanced.html">
+            
+                <a href="../advanced/advanced.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    高级特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../advanced/advanced.html">
+            
+                <a href="../advanced/advanced.html#公共请求头">
+            
+                    
+                        <b>2.2.1.</b>
+                    
+                    公共请求头
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../advanced/advanced.html">
+            
+                <a href="../advanced/advanced.html#公共请求参数">
+            
+                    
+                        <b>2.2.2.</b>
+                    
+                    公共请求参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../advanced/advanced.html">
+            
+                <a href="../advanced/advanced.html#静态常量替换">
+            
+                    
+                        <b>2.2.3.</b>
+                    
+                    静态常量替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../advanced/advanced.html">
+            
+                <a href="../advanced/advanced.html#响应字段忽略">
+            
+                    
+                        <b>2.2.4.</b>
+                    
+                    响应字段忽略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../advanced/advanced.html">
+            
+                <a href="../advanced/advanced.html#导出数据字典">
+            
+                    
+                        <b>2.2.5.</b>
+                    
+                    导出数据字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../advanced/advanced.html">
+            
+                <a href="../advanced/advanced.html#外部源码加载">
+            
+                    
+                        <b>2.2.6.</b>
+                    
+                    外部源码加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../advanced/advanced.html">
+            
+                <a href="../advanced/advanced.html#自定义错误码解析器">
+            
+                    
+                        <b>2.2.7.</b>
+                    
+                    自定义错误码解析器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../advanced/debug.html">
+            
+                <a href="../advanced/debug.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    接口调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../advanced/debug.html">
+            
+                <a href="../advanced/debug.html#smart-doc调试页面">
+            
+                    
+                        <b>2.3.1.</b>
+                    
+                    smart-doc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../advanced/debug.html">
+            
+                <a href="../advanced/debug.html#postman导入调试">
+            
+                    
+                        <b>2.3.2.</b>
+                    
+                    postman
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../advanced/debug.html">
+            
+                <a href="../advanced/debug.html#swagger-ui集成">
+            
+                    
+                        <b>2.3.3.</b>
+                    
+                    swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">集成框架</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../integrated/torna.html">
+            
+                <a href="../integrated/torna.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    torna
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../integrated/dubbo.html">
+            
+                <a href="../integrated/dubbo.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    dubbo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../integrated/jax-rs.html">
+            
+                <a href="../integrated/jax-rs.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    jax-rs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">插件</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="maven.html">
+            
+                <a href="maven.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    maven
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="maven.html">
+            
+                <a href="maven.html#maven">
+            
+                    
+                        <b>4.1.1.</b>
+                    
+                    如何使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="maven.html">
+            
+                <a href="maven.html#插件调试">
+            
+                    
+                        <b>4.1.2.</b>
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="gradle.html">
+            
+                <a href="gradle.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    gradle
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="gradle.html">
+            
+                <a href="gradle.html#gradle">
+            
+                    
+                        <b>4.2.1.</b>
+                    
+                    如何使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="gradle.html">
+            
+                <a href="gradle.html#插件调试">
+            
+                    
+                        <b>4.2.2.</b>
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">FAQ</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../faq/question.html">
+            
+                <a href="../faq/question.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../faq/question.html">
+            
+                <a href="../faq/question.html#smart-doc测试用例反馈">
+            
+                    
+                        <b>5.1.1.</b>
+                    
+                    用例反馈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../faq/question.html">
+            
+                <a href="../faq/question.html#faq">
+            
+                    
+                        <b>5.1.2.</b>
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.2.1" data-path="../faq/question.html">
+            
+                <a href="../faq/question.html#smart-doc">
+            
+                    
+                        <b>5.1.2.1.</b>
+                    
+                    smart-doc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.2" data-path="../faq/question.html">
+            
+                <a href="../faq/question.html#多模块">
+            
+                    
+                        <b>5.1.2.2.</b>
+                    
+                    多模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.3" data-path="../faq/question.html">
+            
+                <a href="../faq/question.html#插件">
+            
+                    
+                        <b>5.1.2.3.</b>
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.4" data-path="../faq/question.html">
+            
+                <a href="../faq/question.html#其他">
+            
+                    
+                        <b>5.1.2.4.</b>
+                    
+                    其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">社区</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../community/idea.html">
+            
+                <a href="../community/idea.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    理念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../community/developer.html">
+            
+                <a href="../community/developer.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    开发者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../community/contributing.html">
+            
+                <a href="../community/contributing.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    如何共建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../community/pull-request-process.html">
+            
+                <a href="../community/pull-request-process.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    贡献流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >gradle</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="gradle">gradle</h1>
+<h2 id="introduce">Introduce</h2>
+<p><code>smart-doc-gradle-plugin</code>&#x662F;<code>smart-doc</code>&#x5B98;&#x65B9;&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x7684;<code>gradle</code>&#x63D2;&#x4EF6;&#xFF0C;&#x8BE5;&#x63D2;&#x4EF6;&#x4ECE;<code>smart-doc 1.8.6</code>&#x7248;&#x672C;&#x5F00;&#x59CB;&#x63D0;&#x4F9B;&#xFF0C;
+&#x4F7F;&#x7528;<code>smart-doc-gradle-plugin</code>&#x66F4;&#x65B9;&#x4FBF;&#x7528;&#x6237;&#x96C6;&#x6210;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x96C6;&#x6210;&#x4E5F;&#x66F4;&#x52A0;&#x8F7B;&#x91CF;&#xFF0C;&#x4F60;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x7F16;&#x5199;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x6765;
+&#x542F;&#x52A8;<code>smart-doc</code>&#x626B;&#x63CF;&#x4EE3;&#x7801;&#x5206;&#x6790;&#x751F;&#x6210;&#x63A5;&#x53E3;&#x6587;&#x6863;&#x3002;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FD0;&#x884C;<code>gradle</code>&#x547D;&#x4EE4;
+&#x6216;&#x8005;&#x662F;<code>IDEA</code>&#x4E2D;&#x70B9;&#x51FB;<code>smart-doc-gradle-plugin</code>&#x9884;&#x8BBE;&#x597D;&#x7684;<code>task</code>&#x5373;&#x53EF;&#x751F;&#x6210;&#x63A5;&#x53E3;&#x6587;&#x6863;&#x3002;</p>
+<h2 id="getting-started">Getting started</h2>
+<h3 id="add-plugin">Add plugin</h3>
+<p><code>Gradle</code>&#x4E2D;&#x6DFB;&#x52A0;&#x63D2;&#x4EF6;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;: &#x4E00;&#x79CD;&#x662F;<code>DSL</code>&#xFF0C;&#x9AD8;&#x7248;&#x672C;<code>Gradle</code>&#x63A8;&#x8350;&#x76F4;&#x63A5;&#x4F7F;&#x7528;<code>DSL</code>&#xFF0C;&#x53E6;&#x4E00;&#x79CD;&#x662F;<code>legacy</code>&#x3002;</p>
+<h4 id="using-the-plugins-dsl">Using the plugins DSL</h4>
+<p>Using the plugins DSL:</p>
+<pre><code class="lang-gradle">plugins {
+  id <span class="hljs-string">&quot;com.ly.smart-doc&quot;</span> version <span class="hljs-string">&quot;[&#x6700;&#x65B0;&#x7248;&#x672C;]&quot;</span>
+}
+</code></pre>
+<h4 id="using-legacy-plugin-application">Using legacy plugin application</h4>
+<p>Using legacy plugin application:</p>
+<pre><code class="lang-gradle"><span class="hljs-keyword">buildscript</span> {
+    <span class="hljs-keyword">repositories</span> {
+        maven { 
+            url <span class="hljs-string">&apos;https://maven.aliyun.com/repository/public&apos;</span> 
+        }
+        maven {
+            url <span class="hljs-string">&apos;https://maven.aliyun.com/repository/gradle-plugin&apos;</span>
+        }
+        maven { 
+            url = uri(<span class="hljs-string">&quot;https://plugins.gradle.org/m2/&quot;</span>) 
+        }
+        mavenCentral()
+    }
+    <span class="hljs-keyword">dependencies</span> {
+        <span class="hljs-keyword">classpath</span> <span class="hljs-string">&apos;com.ly.smart-doc:smart-doc-gradle-plugin:[&#x6700;&#x65B0;&#x7248;&#x672C;]&apos;</span>
+    }
+}
+apply(plugin = <span class="hljs-string">&quot;com.ly.smart-doc&quot;</span>)
+</code></pre>
+<p><strong><code>buildscript</code>&#x914D;&#x7F6E;&#x6DFB;&#x52A0;&#x5230;<code>build.gradle</code>&#x7684;&#x9876;&#x90E8;</strong> &#x3002;</p>
+<h3 id="plugin-options">Plugin options</h3>
+<p>&#x4F7F;&#x7528;<code>smart-doc</code>&#x63D2;&#x4EF6;&#x8FD8;&#x9700;&#x8981;&#x5728;<code>build.gradle</code>&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x672C;&#x8EAB;&#x7684;&#x914D;&#x7F6E;</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Default value</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>configFile</td>
+<td><code>src/main/resources/default.json</code></td>
+<td><code>true</code></td>
+<td>&#x63D2;&#x4EF6;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>exclude</td>
+<td>&#x65E0;</td>
+<td><code>false</code></td>
+<td>&#x6392;&#x9664;&#x4E00;&#x4E9B;&#x65E0;&#x6CD5;&#x81EA;&#x52A8;&#x4E0B;&#x8F7D;&#x7684;<code>java lib sources</code>,&#x4F8B;&#x5982;:<code>exclude &apos;org.springframework.boot:spring-boot-starter-tomcat&apos;</code></td>
+</tr>
+<tr>
+<td>include</td>
+<td>&#x65E0;</td>
+<td><code>false</code></td>
+<td>&#x8BA9;&#x63D2;&#x4EF6;&#x81EA;&#x5B9A;&#x4E0B;&#x8F7D;&#x6307;&#x5B9A;&#x7684;<code>java lib sources</code>,&#x4F8B;&#x5982;:<code>include &apos;org.springframework.boot:spring-boot-starter-tomcat&apos;</code></td>
+</tr>
+</tbody>
+</table>
+<p>Example setting of options:</p>
+<pre><code class="lang-gradle">smartdoc {
+    configFile = <span class="hljs-keyword">file</span>(<span class="hljs-string">&quot;src/main/resources/smart-doc.json&quot;</span>)
+
+    <span class="hljs-comment">// exclude example</span>
+    <span class="hljs-comment">// exclude artifact</span>
+    <span class="hljs-keyword">exclude</span> <span class="hljs-string">&apos;org.springframework.boot:spring-boot-starter-tomcat&apos;</span>
+    <span class="hljs-comment">// exclude artifact use pattern</span>
+    <span class="hljs-keyword">exclude</span> <span class="hljs-string">&apos;org.springframework.boot.*&apos;</span>
+    <span class="hljs-comment">// &#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;include&#x914D;&#x7F6E;&#x6765;&#x8BA9;&#x63D2;&#x4EF6;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x6307;&#x5B9A;&#x4F9D;&#x8D56;&#x7684;source.</span>
+    <span class="hljs-keyword">include</span> <span class="hljs-string">&apos;org.springframework.boot:spring-boot-starter-tomcat&apos;</span>
+}
+</code></pre>
+<p>&#x5BF9;&#x4E8E;&#x591A;&#x6A21;&#x5757;&#x7684;<code>gradle</code>&#xFF0C;&#x628A;<code>smart-doc</code>&#x63D2;&#x4EF6;&#x76F8;&#x5173;&#x914D;&#x7F6E;&#x653E;&#x5230;&#x6839;&#x76EE;&#x5F55;<code>build.gradle</code>&#x7684;<code>subprojects</code>&#x4E2D;&#x3002;</p>
+<pre><code class="lang-gradle"><span class="hljs-keyword">subprojects</span>{
+    apply plugin: <span class="hljs-string">&apos;com.ly.smart-doc&apos;</span>
+    smartdoc {
+        <span class="hljs-comment">//</span>
+        configFile = <span class="hljs-keyword">file</span>(<span class="hljs-string">&quot;src/main/resources/smart-doc.json&quot;</span>)
+        <span class="hljs-comment">// exclude artifact</span>
+        <span class="hljs-keyword">exclude</span> <span class="hljs-string">&apos;org.springframework.boot:xx&apos;</span>
+        <span class="hljs-keyword">exclude</span> <span class="hljs-string">&apos;org.springframework.boot:ddd&apos;</span>
+        <span class="hljs-comment">// &#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;include&#x914D;&#x7F6E;&#x6765;&#x8BA9;&#x63D2;&#x4EF6;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x6307;&#x5B9A;&#x4F9D;&#x8D56;&#x7684;source.</span>
+        <span class="hljs-keyword">include</span> <span class="hljs-string">&apos;org.springframework.boot:spring-boot-starter-tomcat&apos;</span>
+    }
+}
+</code></pre>
+<p>&#x591A;&#x6A21;&#x5757;<code>smart-doc</code>&#x7684;&#x5B9E;&#x6218;<code>demo</code>&#x53C2;&#x8003;</p>
+<pre><code>https://gitee.com/smart-doc-team/smart-doc-gradle-plugin-demo
+</code></pre><blockquote>
+<p>&#x591A;&#x6A21;&#x5757;&#x548C;&#x5355;&#x6A21;&#x5757;&#x9879;&#x76EE;&#x662F;&#x6709;&#x533A;&#x522B;&#xFF0C;&#x591A;&#x6A21;&#x5757;&#x4E0D;&#x4ECE;&#x6839;&#x76EE;&#x5F55;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x6784;&#x5EFA;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x6A21;&#x5757;&#x95F4;&#x6E90;&#x4EE3;&#x7801;&#x52A0;&#x8F7D;&#x5931;&#x8D25;&#xFF0C;&#x751F;&#x6210;&#x6587;&#x6863;&#x51FA;&#x73B0;&#x5404;&#x79CD;&#x95EE;&#x9898;&#x3002;</p>
+<h3 id="create-a-json-config">Create a json config</h3>
+<p>&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>json</code>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x591A;&#x4E2A;&#x6A21;&#x5757;&#x5219;&#x653E;&#x5230;&#x9700;&#x8981;&#x751F;&#x6210;&#x6587;&#x6863;&#x7684;&#x6A21;&#x5757;&#x4E2D;&#xFF0C;<code>smart-doc-gradle-plugin</code>&#x63D2;&#x4EF6;&#x4F1A;&#x6839;&#x636E;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x751F;&#x6210;&#x9879;&#x76EE;&#x7684;&#x63A5;&#x53E3;&#x6587;&#x6863;&#x3002;
+&#x4F8B;&#x5982;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x521B;&#x5EFA;<code>/src/main/resources/smart-doc.json</code>&#x3002;&#x914D;&#x7F6E;&#x5185;&#x5BB9;&#x53C2;&#x8003;&#x5982;&#x4E0B;&#x3002;</p>
+</blockquote>
+<p><strong>&#x6700;&#x5C0F;&#x914D;&#x7F6E;&#x5355;&#x5143;:</strong></p>
+<pre><code class="lang-json">{
+   <span class="hljs-string">&quot;outPath&quot;</span>: <span class="hljs-string">&quot;D://md2&quot;</span> <span class="hljs-comment">//&#x6307;&#x5B9A;&#x6587;&#x6863;&#x7684;&#x8F93;&#x51FA;&#x8DEF;&#x5F84; &#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x65F6;&#x8BF7;&#x5199; ./ &#x4E0D;&#x8981;&#x5199; / eg:./src/main/resources/static/doc</span>
+}
+</code></pre>
+<h3 id="generated-document">Generated document</h3>
+<h4 id="use-gradle-command">Use Gradle command</h4>
+<pre><code class="lang-bash">//&#x751F;&#x6210;html
+gradle smartDocRestHtml
+//&#x751F;&#x6210;markdown
+gradle smartDocRestMarkdown
+//&#x751F;&#x6210;adoc
+gradle smartDocRestAdoc
+//&#x751F;&#x6210;postmanjson&#x6570;&#x636E;
+gradle smartDocPostman
+//&#x751F;&#x6210;Open Api 3.0 +&#x89C4;&#x8303;&#x7684;json&#x6587;&#x6863;,since smart-doc-gradle-plugin 1.1.4
+gradle smartDocOpenApi
+//&#x751F;&#x6210;rest&#x63A5;&#x53E3;&#x6587;&#x6863;&#x5E76;&#x63A8;&#x9001;&#x5230;Torna&#x5E73;&#x53F0;,@since 2.0.9
+gradle tornaRest
+
+// Apache Dubbo Rpc&#x751F;&#x6210;
+// Generate html
+gradle smartDocRpcHtml
+// Generate markdown
+gradle smartDocRpcMarkdown
+// Generate adoc
+gradle smartDocRpcAdoc
+// &#x63A8;&#x9001;rpc&#x63A5;&#x53E3;&#x5230;torna&#x4E2D;
+gradle tornaRpc
+</code></pre>
+<h4 id="use-idea">Use IDEA</h4>
+<p>&#x5F53;&#x4F60;&#x4F7F;&#x7528;<code>Idea</code>&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>Gradle Helper</code>&#x63D2;&#x4EF6;&#x9009;&#x62E9;&#x751F;&#x6210;&#x4F55;&#x79CD;&#x6587;&#x6863;&#x3002;</p>
+<p><img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/idea-gradle-plugin.png" alt="idea&#x4E2D;smart-doc-gradle&#x63D2;&#x4EF6;&#x4F7F;&#x7528;" title="usage.png"></p>
+<h2 id="&#x63D2;&#x4EF6;&#x6E90;&#x7801;">&#x63D2;&#x4EF6;&#x6E90;&#x7801;</h2>
+<p><a href="https://github.com/TongchengOpenSource/smart-doc-gradle-plugin" target="_blank">https://github.com/TongchengOpenSource/smart-doc-gradle-plugin</a></p>
+<p><code>smart-doc</code>&#x5B98;&#x65B9;&#x7684;<code>Gradle</code>&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x6B63;&#x5728;&#x8FDB;&#x884C;&#x4E2D;&#xFF0C;&#x5F53;&#x524D;&#x5B8C;&#x6210;&#x4E86;&#x63D2;&#x4EF6;&#x7684;&#x4E3B;&#x4F53;&#x7ED3;&#x6784;&#xFF0C;&#x5728;&#x4F18;&#x5316;&#x6D4B;&#x8BD5;&#x4E2D;&#xFF0C;&#x8BF7;&#x8010;&#x5FC3;&#x7B49;&#x5F85;&#x53D1;&#x5E03;&#x3002;</p>
+<h1 id="&#x63D2;&#x4EF6;&#x8C03;&#x8BD5;">&#x63D2;&#x4EF6;&#x8C03;&#x8BD5;</h1>
+<p><code>smart-doc-gradle-plugin</code>&#x63D2;&#x4EF6;&#x4F9D;&#x8D56;&#x4E8E;<code>smart-doc</code>&#x6765;&#x5B8C;&#x6210;&#x6587;&#x4EF6;&#x7684;&#x89E3;&#x6790;&#xFF0C;<code>smart-doc-gradle-plugin</code>&#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x4E86;&#x7528;&#x6237;&#x66F4;&#x52A0;&#x5FEB;&#x901F;&#x7B80;&#x6613;&#x7684;
+&#x5C06;<code>smart-doc</code>&#x96C6;&#x6210;&#x5230;&#x9879;&#x76EE;
+&#x4E2D;&#x751F;&#x6210;<code>API</code>&#x6587;&#x6863;&#xFF0C;&#x540C;&#x65F6;<code>smart-doc-gradle-plugin</code>&#x63D2;&#x4EF6;&#x4E5F;&#x662F;&#x7ED9;<code>smart-doc</code>&#x8FDB;&#x884C;&#x8D4B;&#x80FD;&#xFF0C;&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x5206;&#x6790;&#x4E00;&#x4E9B;<code>source jar</code>&#x7684;&#x6E90;&#x7801;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;
+&#x7136;&#x540E;&#x5C06;&#x8DEF;&#x5F84;&#x8D4B;&#x4E88;<code>smart-doc</code>&#x65B9;&#x4FBF;&#x66F4;&#x597D;&#x7684;&#x57FA;&#x4E8E;&#x6E90;&#x7801;&#x5206;&#x6790;&#x3002;</p>
+<p>&#x4F46;&#x662F;<code>smart-doc</code>&#x9762;&#x5BF9;&#x7740;&#x5F88;&#x591A;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x5404;&#x5F0F;&#x5404;&#x6837;&#x7684;&#x4EE3;&#x7801;&#x6211;&#x4EEC;&#x5728;&#x5F00;&#x53D1;&#x7684;&#x65F6;&#x5019;&#x5E76;&#x4E0D;&#x80FD;&#x5B8C;&#x5168;&#x8003;&#x8651;&#x5230;&#x3002;&#x6709;&#x7684;&#x4EE3;&#x7801;&#x751A;&#x81F3;&#x4F5C;&#x8005;&#x4E5F;&#x4ECE;&#x672A;&#x5199;&#x8FC7;&#x3002;
+&#x56E0;&#x6B64;&#x51FA;&#x73B0;&#x4E00;&#x4E9B;&#x4E0D;&#x660E;&#x539F;&#x56E0;&#x65F6;&#x901A;&#x5E38;&#x9700;&#x8981;&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x8FDB;&#x884C;&#x8C03;&#x8BD5;&#x3002;&#x672C;&#x8282;&#x5C06;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x901A;&#x8FC7;<code>smart-doc-gradle-plugin</code>&#x6765;&#x8C03;&#x8BD5;<code>smart-doc</code>&#x5E95;&#x5C42;&#x7684;&#x89E3;&#x6790;&#x3002;</p>
+<h2 id="&#x6DFB;&#x52A0;smart-doc&#x4F9D;&#x8D56;">&#x6DFB;&#x52A0;smart-doc&#x4F9D;&#x8D56;</h2>
+<p>&#x6DFB;&#x52A0;<code>smart-doc</code>&#x4F9D;&#x8D56;&#x4E3B;&#x8981;&#x662F;&#x65B9;&#x4FBF;&#x76F4;&#x63A5;&#x67E5;&#x770B;&#x5230;&#x6E90;&#x7801;&#x8C03;&#x8BD5;&#x3002;&#x672A;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x8C03;&#x8BD5;&#x4E8B;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x6DFB;&#x52A0;<code>smart-doc</code>&#x4F9D;&#x8D56;&#x3002;</p>
+<pre><code>dependencies {
+    testCompile &apos;com.ly.smart-doc:smart-doc:&#x3010;&#x6700;&#x65B0;&#x7248;&#x672C;&#x3011;&apos;
+}
+</code></pre><p>&#x627E;&#x5230;<code>smart-doc</code>&#x6E90;&#x7801;&#x6253;&#x4E0A;&#x65AD;&#x70B9;&#x3002;&#x64CD;&#x4F5C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;
+<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/002115_04d0246d_144669.png" alt="&#x6253;&#x65AD;&#x70B9;&#x793A;&#x4F8B;" title="debug1.png"></p>
+<h2 id="&#x547D;&#x4EE4;&#x884C;&#x7EC8;&#x7AEF;&#x8BBE;&#x7F6E;debug&#x6A21;&#x5F0F;">&#x547D;&#x4EE4;&#x884C;&#x7EC8;&#x7AEF;&#x8BBE;&#x7F6E;debug&#x6A21;&#x5F0F;</h2>
+<p><code>Gradle</code>&#x63D2;&#x4EF6;&#x7684;&#x8C03;&#x8BD5;&#x5E76;&#x4E0D;&#x50CF;&#x8C03;&#x8BD5;<code>JAVA</code>&#x7A0B;&#x5E8F;&#x548C;<code>Maven</code>&#x63D2;&#x4EF6;&#x90A3;&#x4E48;&#x7B80;&#x5355;&#x3002;&#x5728;<code>IDEA</code>&#x4E0A;&#x76F4;&#x63A5;&#x70B9;&#x51FB;<code>debug</code>&#x542F;&#x52A8;&#x76F8;&#x5173;&#x64CD;&#x4F5C;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8C03;&#x8BD5;&#x4E86;&#x3002;
+&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x8BBE;&#x7F6E;&#x8C03;&#x8BD5;&#x6A21;&#x5F0F;&#x3002;&#x64CD;&#x4F5C;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;
+<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/003046_3cb24659_144669.png" alt="&#x8BBE;&#x7F6E;debug&#x6A21;&#x5F0F;" title="debug2.png">
+&#x56FE;&#x4E2D;&#x4E3B;&#x8981;&#x662F;&#x6253;&#x5F00;&#x547D;&#x4EE4;&#x884C;&#x7EC8;&#x7AEF;&#x6307;&#x5B9A;&#x8BA9;<code>smart-doc-gradle-plugin</code>&#x7684;&#x67D0;&#x4E00;&#x4E2A;<code>task</code>&#x4F7F;&#x7528;<code>debug</code>&#x6A21;&#x5F0F;&#x8FD0;&#x884C;, 
+&#x5982;&#x4E0A;&#x56FE;&#x6240;&#x793A;&#x6307;&#x5B9A;&#x6784;&#x5EFA;<code>html</code>&#x6587;&#x6863;&#x7684;<code>task</code>&#x6765;&#x5F00;&#x542F;<code>debug</code>&#x6A21;&#x5F0F;&#xFF0C;&#x547D;&#x4EE4;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>gradlew smartDocRestHtml -Dorg.gradle.daemon=false -Dorg.gradle.debug=true
+</code></pre><p>&#x5982;&#x679C;&#x6267;&#x884C;&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x51FA;&#x73B0;&#x4E0B;&#x9762;&#x7684;&#x9519;&#x8BEF;</p>
+<pre><code>&#x9519;&#x8BEF;: &#x627E;&#x4E0D;&#x5230;&#x6216;&#x65E0;&#x6CD5;&#x52A0;&#x8F7D;&#x4E3B;&#x7C7B; org.gradle.wrapper.GradleWrapperMain
+</code></pre><p>&#x5219;&#x8BF7;&#x5148;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x4E00;&#x6761;&#x547D;&#x4EE4;&#x8BA9;<code>Gradle</code>&#x81EA;&#x52A8;&#x4E0B;&#x8F7D;&#x8BBE;&#x7F6E;&#x597D;<code>GradleWrapper</code>,&#x5F53;&#x7136;&#x7F51;&#x7EDC;&#x95EE;&#x9898;&#x81EA;&#x884C;&#x5904;&#x7406;&#x3002;</p>
+<pre><code>gradle wrapper
+</code></pre><h2 id="&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;&#x76D1;&#x542C;">&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;&#x76D1;&#x542C;</h2>
+<p>&#x70B9;&#x51FB; <strong>Edit Configurations</strong>
+<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/004033_cd63df34_144669.png" alt="&#x8F93;&#x5165;&#x56FE;&#x7247;&#x8BF4;&#x660E;" title="remote1.png">
+&#x70B9;&#x5F00;&#x5DE6;&#x8FB9;&#x7684;&#x201C;+&#x201D;&#x53F7;&#xFF0C;&#x70B9;&#x51FB;&#x201C;Remote&#x201D;
+<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/004113_df83ee8d_144669.png" alt="&#x6DFB;&#x52A0;remote" title="remote2.png"></p>
+<h2 id="&#x6267;&#x884C;&#x8C03;&#x8BD5;">&#x6267;&#x884C;&#x8C03;&#x8BD5;</h2>
+<p>&#x5B8C;&#x6210;&#x4E0A;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#x540E;&#x5373;&#x53EF;&#x7528;<code>debug</code>&#x8C03;&#x8BD5;&#x8FDB;&#x5165;&#x63D2;&#x4EF6;&#x548C;<code>smart-doc</code>&#x4E86;&#xFF0C;&#x7136;&#x540E;&#x67E5;&#x770B;<code>smart-doc</code>&#x7684;&#x6267;&#x884C;&#x60C5;&#x51B5;&#x3002;&#x64CD;&#x4F5C;&#x5982;&#x4E0B;&#x56FE;
+<img src="https://raw.githubusercontent.com/chenqi146/smart-doc.github.io/book/_images/004808_63ad37db_144669.png" alt="&#x6267;&#x884C;&#x8C03;&#x8BD5;" title="debug3.png"></p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2023-11-05 16:34:48 </span> </footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="maven.html#插件调试" class="navigation navigation-prev " aria-label="Previous page: 调试">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="gradle.html#gradle" class="navigation navigation-next " aria-label="Next page: 如何使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"gradle","level":"4.2","depth":1,"next":{"title":"如何使用","level":"4.2.1","depth":2,"anchor":"#gradle","path":"plugins/gradle.md","ref":"plugins/gradle.md#gradle","articles":[]},"previous":{"title":"调试","level":"4.1.2","depth":2,"anchor":"#插件调试","path":"plugins/maven.md","ref":"plugins/maven.md#插件调试","articles":[]},"dir":"ltr"},"config":{"plugins":["page-footer-ex","livereload","advanced-emoji","code","popup","back-to-top-button","chapter-fold","search-pro"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search-pro":{"cutWordLib":"nodejieba"},"search":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"plugins/gradle.md","mtime":"2023-11-05T08:34:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-11-19T02:51:22.310Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

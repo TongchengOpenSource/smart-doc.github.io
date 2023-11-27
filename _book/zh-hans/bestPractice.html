@@ -1,0 +1,1074 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>最佳实践 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="example.html" />
+    
+    
+    <link rel="prev" href="guide.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">基础</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="quickStart.html">
+            
+                <a href="quickStart.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="guide.html">
+            
+                <a href="guide.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    使用指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="guide.html">
+            
+                <a href="guide.html#javadoc">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    javadoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="guide.html">
+            
+                <a href="guide.html#smart-doc">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    smart-doc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="guide.html">
+            
+                <a href="guide.html#jsr">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    jsr
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="bestPractice.html">
+            
+                <a href="bestPractice.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="example.html">
+            
+                <a href="example.html">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    示例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="example.html">
+            
+                <a href="example.html#单模块">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    单模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="example.html">
+            
+                <a href="example.html#多模块">
+            
+                    
+                        <b>1.5.2.</b>
+                    
+                    多模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">高级</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="advanced/config.html">
+            
+                <a href="advanced/config.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="advanced/advanced.html">
+            
+                <a href="advanced/advanced.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    高级特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="advanced/advanced.html">
+            
+                <a href="advanced/advanced.html#公共请求头">
+            
+                    
+                        <b>2.2.1.</b>
+                    
+                    公共请求头
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="advanced/advanced.html">
+            
+                <a href="advanced/advanced.html#公共请求参数">
+            
+                    
+                        <b>2.2.2.</b>
+                    
+                    公共请求参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="advanced/advanced.html">
+            
+                <a href="advanced/advanced.html#静态常量替换">
+            
+                    
+                        <b>2.2.3.</b>
+                    
+                    静态常量替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="advanced/advanced.html">
+            
+                <a href="advanced/advanced.html#响应字段忽略">
+            
+                    
+                        <b>2.2.4.</b>
+                    
+                    响应字段忽略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="advanced/advanced.html">
+            
+                <a href="advanced/advanced.html#导出数据字典">
+            
+                    
+                        <b>2.2.5.</b>
+                    
+                    导出数据字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="advanced/advanced.html">
+            
+                <a href="advanced/advanced.html#外部源码加载">
+            
+                    
+                        <b>2.2.6.</b>
+                    
+                    外部源码加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="advanced/advanced.html">
+            
+                <a href="advanced/advanced.html#自定义错误码解析器">
+            
+                    
+                        <b>2.2.7.</b>
+                    
+                    自定义错误码解析器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="advanced/debug.html">
+            
+                <a href="advanced/debug.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    接口调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="advanced/debug.html">
+            
+                <a href="advanced/debug.html#smart-doc调试页面">
+            
+                    
+                        <b>2.3.1.</b>
+                    
+                    smart-doc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="advanced/debug.html">
+            
+                <a href="advanced/debug.html#postman导入调试">
+            
+                    
+                        <b>2.3.2.</b>
+                    
+                    postman
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="advanced/debug.html">
+            
+                <a href="advanced/debug.html#swagger-ui集成">
+            
+                    
+                        <b>2.3.3.</b>
+                    
+                    swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">集成框架</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="integrated/torna.html">
+            
+                <a href="integrated/torna.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    torna
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="integrated/dubbo.html">
+            
+                <a href="integrated/dubbo.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    dubbo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="integrated/jax-rs.html">
+            
+                <a href="integrated/jax-rs.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    jax-rs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">插件</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="plugins/maven.html">
+            
+                <a href="plugins/maven.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    maven
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="plugins/maven.html">
+            
+                <a href="plugins/maven.html#maven">
+            
+                    
+                        <b>4.1.1.</b>
+                    
+                    如何使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="plugins/maven.html">
+            
+                <a href="plugins/maven.html#插件调试">
+            
+                    
+                        <b>4.1.2.</b>
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="plugins/gradle.html">
+            
+                <a href="plugins/gradle.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    gradle
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="plugins/gradle.html">
+            
+                <a href="plugins/gradle.html#gradle">
+            
+                    
+                        <b>4.2.1.</b>
+                    
+                    如何使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="plugins/gradle.html">
+            
+                <a href="plugins/gradle.html#插件调试">
+            
+                    
+                        <b>4.2.2.</b>
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">FAQ</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="faq/question.html">
+            
+                <a href="faq/question.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="faq/question.html">
+            
+                <a href="faq/question.html#smart-doc测试用例反馈">
+            
+                    
+                        <b>5.1.1.</b>
+                    
+                    用例反馈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="faq/question.html">
+            
+                <a href="faq/question.html#faq">
+            
+                    
+                        <b>5.1.2.</b>
+                    
+                    FAQ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.2.1" data-path="faq/question.html">
+            
+                <a href="faq/question.html#smart-doc">
+            
+                    
+                        <b>5.1.2.1.</b>
+                    
+                    smart-doc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.2" data-path="faq/question.html">
+            
+                <a href="faq/question.html#多模块">
+            
+                    
+                        <b>5.1.2.2.</b>
+                    
+                    多模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.3" data-path="faq/question.html">
+            
+                <a href="faq/question.html#插件">
+            
+                    
+                        <b>5.1.2.3.</b>
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2.4" data-path="faq/question.html">
+            
+                <a href="faq/question.html#其他">
+            
+                    
+                        <b>5.1.2.4.</b>
+                    
+                    其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">社区</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="community/idea.html">
+            
+                <a href="community/idea.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    理念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="community/developer.html">
+            
+                <a href="community/developer.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    开发者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="community/contributing.html">
+            
+                <a href="community/contributing.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    如何共建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="community/pull-request-process.html">
+            
+                <a href="community/pull-request-process.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    贡献流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >最佳实践</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6700;&#x4F73;&#x5B9E;&#x8DF5;">&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</h1>
+<p>smart-doc&#x662F;&#x4E00;&#x6B3E;&#x6839;&#x636E;&#x63A5;&#x53E3;&#x7684;&#x6CDB;&#x578B;&#x5B9A;&#x4E49;&#x6765;&#x5728;&#x7F16;&#x8BD1;&#x5668;&#x671F;&#x52A0;&#x8F7D;&#x5206;&#x6790;&#x9879;&#x6E90;&#x4EE3;&#x7801;&#x7684;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x548C;&#x8BF7;&#x6C42;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#x5DE5;&#x5177;&#x3002; &#x5982;&#x679C;&#x4F60;&#x5728;&#x4EE3;&#x7801;&#x7684;&#x63A5;&#x53E3;&#x5B9A;&#x4E49;&#x4E2D;&#x8FD4;&#x56DE;&#x5982;&#x4E0B;&#x51E0;&#x79CD;&#x7C7B;&#x578B;&#x6211;&#x4EEC;&#x90FD;&#x5C06;&#x65E0;&#x6CD5;&#x505A;&#x5904;&#x7406;&#x3002;</p>
+<h3 id="&#x54CD;&#x5E94;&#x7C7B;&#x4F7F;&#x7528;&#x6CDB;&#x578B;&#x5B9A;&#x4E49;">&#x54CD;&#x5E94;&#x7C7B;(&#x4F7F;&#x7528;&#x6CDB;&#x578B;&#x5B9A;&#x4E49;)</h3>
+<p>&#x5927;&#x591A;&#x6570;&#x6210;&#x719F;&#x56E2;&#x961F;&#x7684;&#x7EDF;&#x4E00;&#x8FD4;&#x56DE;&#x7C7B;&#x4F3C;&#x5982;&#x4E0B;(&#x56E0;&#x6587;&#x6863;&#x7BC7;&#x5E45;&#xFF0C;&#x7701;&#x7565;&#x5F88;&#x591A;&#x6CE8;&#x91CA;&#xFF0C;&#x4F7F;&#x7528;smart-doc&#x5728;&#x771F;&#x5B9E;&#x4EE3;&#x7801;&#x4E2D;&#x8BF7;&#x89C4;&#x8303;&#x4E9B;&#x6CE8;&#x91CA;)&#xFF0C;&#x5F53;&#x7136;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x9879;&#x76EE;&#x6765;&#x5B9A;&#x5236;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CommonResult</span>&lt;<span class="hljs-title">T</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">Serializable</span> </span>{
+
+    <span class="hljs-comment">/**
+         * &#x662F;&#x5426;&#x6210;&#x529F;
+         */</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> success = <span class="hljs-keyword">false</span>;
+    <span class="hljs-keyword">private</span> String message;
+    <span class="hljs-keyword">private</span> T data;
+    <span class="hljs-keyword">private</span> String code;
+    <span class="hljs-keyword">private</span> String timestamp;
+}
+</code></pre>
+<h3 id="&#x63A5;&#x53E3;&#x8BF7;&#x6C42;">&#x63A5;&#x53E3;&#x8BF7;&#x6C42;</h3>
+<p>&#x8FD9;&#x79CD;&#x5B9A;&#x4E49;&#x7EDF;&#x4E00;&#x8FD4;&#x56DE;&#x7ED3;&#x6784;&#x548C;&#x660E;&#x786E;&#x7684;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x5B9A;&#x4E49;&#xFF0C;smart-doc&#x80FD;&#x591F;&#x63A8;&#x5BFC;&#x6839;&#x636E;&#x63A5;&#x53E3;&#x5B9A;&#x4E49;&#x5E2E;&#x4F60;&#x63A8;&#x5BFC;&#x51FA;&#x7C7B;&#x7684;&#x5B57;&#x6BB5;&#x5B9A;&#x4E49;&#xFF0C;&#x5305;&#x62EC;&#x5D4C;&#x5957;&#x7684;&#x5BF9;&#x8C61;&#x5B9A;&#x4E49;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+     * &#x6DFB;&#x52A0;&#x7528;&#x6237;&#x4FE1;&#x606F;
+     * <span class="hljs-doctag">@param</span> user
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+<span class="hljs-meta">@PostMapping</span>(<span class="hljs-string">&quot;/add&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> CommonResult&lt;User&gt; <span class="hljs-title">addUser</span><span class="hljs-params">(@RequestBody User user)</span></span>{
+    <span class="hljs-keyword">return</span> CommonResult.ok().setResult(user);
+}
+
+<span class="hljs-comment">/**
+     * &#x5206;&#x9875;&#x67E5;&#x8BE2;&#x7528;&#x6237;&#x4FE1;&#x606F;
+     * <span class="hljs-doctag">@param</span> user
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+<span class="hljs-meta">@PostMapping</span>(<span class="hljs-string">&quot;/page&quot;</span>)
+<span class="hljs-keyword">public</span> CommonResult&lt;Page&lt;User&gt;&gt; addUser(<span class="hljs-meta">@RequestBody</span> UserQuery query){
+    <span class="hljs-keyword">return</span> CommonResult.ok().setResult(user);
+}
+</code></pre>
+<h3 id="&#x9519;&#x8BEF;&#x793A;&#x4F8B;">&#x9519;&#x8BEF;&#x793A;&#x4F8B;</h3>
+<h4 id="1-&#x63A5;&#x53E3;&#x4E2D;&#x4F7F;&#x7528;map">1. &#x63A5;&#x53E3;&#x4E2D;&#x4F7F;&#x7528;<code>Map</code></h4>
+<p>&#x56E0;&#x4E3A;&#x65E0;&#x6CD5;&#x5206;&#x6790;&#x4EE3;&#x7801;&#x4E2D;Map&#x7684;key&#x503C;&#xFF0C;&#x6240;&#x4EE5;smart-doc&#x65E0;&#x6CD5;&#x751F;&#x6210;&#x597D;&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@GetMapping</span>(value = <span class="hljs-string">&quot;/object&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> Map&lt;String, User&gt; <span class="hljs-title">testMapUser</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+}
+</code></pre>
+<h4 id="2-&#x8FD4;&#x56DE;jsonobject">2. &#x8FD4;&#x56DE;<code>JSONObject</code></h4>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+     * &#x8FD4;&#x56DE;&#x7528;&#x6237;&#x4FE1;&#x606F;
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+<span class="hljs-meta">@GetMapping</span>(value = <span class="hljs-string">&quot;/user&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> JSONObject <span class="hljs-title">object</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+}
+</code></pre>
+<p>&#x56E2;&#x961F;&#x4E2D;&#x6709;&#x8FD9;&#x6837;&#x5B9A;&#x4E49;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x4E00;&#x5B9A;&#x8981;&#x6279;&#x8BC4;&#xFF0C;&#x9B3C;&#x77E5;&#x9053;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x5565;&#x3002;&#x7A0B;&#x5E8F;&#x5458;&#x90FD;&#x770B;&#x4E0D;&#x61C2;&#xFF0C;&#x66F4;&#x522B;&#x8BF4;<code>smart-doc</code>&#x4E86;&#x3002;</p>
+<h4 id="3-&#x8FD4;&#x56DE;modelmap">3. &#x8FD4;&#x56DE;<code>ModelMap</code></h4>
+<pre><code class="lang-java"><span class="hljs-comment">/**
+     * &#x8FD4;&#x56DE;&#x7528;&#x6237;&#x4FE1;&#x606F;
+     * <span class="hljs-doctag">@return</span>
+     */</span>
+<span class="hljs-meta">@GetMapping</span>(value = <span class="hljs-string">&quot;/user&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> ModelMap <span class="hljs-title">object</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x548C;<code>Map</code>&#x662F;&#x4E00;&#x4E2A;&#x9053;&#x7406;&#xFF0C;&#x5E76;&#x4E14;<code>smart-doc</code>&#x76F4;&#x63A5;&#x5929;&#x751F;&#x5C4F;&#x853D;<code>ModelMap</code>&#x3002;</p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2023-11-05 16:37:29 </span> </footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="guide.html#jsr" class="navigation navigation-prev " aria-label="Previous page: jsr">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="example.html" class="navigation navigation-next " aria-label="Next page: 示例">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"最佳实践","level":"1.4","depth":1,"next":{"title":"示例","level":"1.5","depth":1,"path":"example.md","ref":"example.md","articles":[{"title":"单模块","level":"1.5.1","depth":2,"anchor":"#单模块","path":"example.md","ref":"example.md#单模块","articles":[]},{"title":"多模块","level":"1.5.2","depth":2,"anchor":"#多模块","path":"example.md","ref":"example.md#多模块","articles":[]}]},"previous":{"title":"jsr","level":"1.3.3","depth":2,"anchor":"#jsr","path":"guide.md","ref":"guide.md#jsr","articles":[]},"dir":"ltr"},"config":{"plugins":["page-footer-ex","livereload","advanced-emoji","code","popup","back-to-top-button","chapter-fold","search-pro"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search-pro":{"cutWordLib":"nodejieba"},"search":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"bestPractice.md","mtime":"2023-11-05T08:37:29.489Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-11-19T02:51:22.310Z"},"basePath":".","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
