@@ -121,11 +121,12 @@ This configuration content is actually the result of converting `ApiConfig` writ
 
 For detailed configuration, please refer to the specific documentation (**Customization | Configuration items**)
 
-上面的`json`配置实例中只有`"outPath"`是必填项。其它的配置根据自身项目需要来配置。
+In the above `json` configuration example, only `"outPath"` is required. Other configurations can be configured according to the needs of your own project.
 
-**注意：** 对于老用户完全可以通过`Fastjson`或者是`Gson`库将`ApiConfig`转化成`json`配置。
-## 运行插件生成文档
-### 5.1 使用maven命令行
+**Note:** For old users, you can convert `ApiConfig` into `json` configuration through `Fastjson` or `Gson` library.
+## Run the plug-in to generate documentation
+### 5.1 Using maven command line
+
 ```
 mvn -Dfile.encoding=UTF-8 smart-doc:html
 mvn -Dfile.encoding=UTF-8 smart-doc:markdown
